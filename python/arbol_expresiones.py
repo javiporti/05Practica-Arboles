@@ -67,7 +67,6 @@ class ArbolExpresion:
         # Devuelve la RAIZ (un Nodo) del arbol de la expresion postfija.
         # Si esta mal formada (faltan o sobran operandos, token que no es un
         # numero ni un operador, cadena vacia): raise ValueError("...")
-        # TODO: recorre postfija.split() con una pila (list) de NODOS.
         #--------------------------------------------------------------------#
         expresion_list = postfija.split()
         pila = []
@@ -102,7 +101,6 @@ class ArbolExpresion:
         # "3 4 + 2 *" -> 14       "7 2 /" -> 3.5
         # Arbol vacio: raise ValueError("..."). La division por cero ya
         # lanza ZeroDivisionError por si sola.
-        # TODO
         #--------------------------------------------------------------------#
         if self.raiz is None:
             raise IndexError("EL arbol esta vacio!")
