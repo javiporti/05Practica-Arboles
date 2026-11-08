@@ -137,7 +137,7 @@ class ArbolExpresion:
             return
         tokens.append(nodo.valor)
         self._preorder(nodo.izquierdo, tokens)
-        self.preorder(nodo.derecho, tokens)
+        self._preorder(nodo.derecho, tokens)
 
     def postfija(self):
         # Coste: O(?)      (3 + 4) * 2  ->  "3 4 + 2 *"
